@@ -9,7 +9,7 @@ ENV             ENV $HOME/.bashrc
 
 # Can't `git pull` unless we set these
 WORKDIR         /root
-RUN             git config --global user.email "radial@brianclements.net" &&\
-                git config --global user.name "radial"
+RUN             git config --global user.email "f+dockergit@fida.biz" &&\
+                git config --global user.name "0xFF"
 
 CMD             ["/bin/sh"]

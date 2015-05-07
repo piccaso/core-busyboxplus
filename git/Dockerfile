@@ -1,5 +1,4 @@
 FROM            scratch
-MAINTAINER      Brian Clements <radial@brianclements.net>
 ADD             rootfs.tar /
 
 # Setup and source bashrc for tab-complete, shell coloring
@@ -10,6 +9,6 @@ ENV             ENV $HOME/.bashrc
 # Can't `git pull` unless we set these
 WORKDIR         /root
 RUN             git config --global user.email "f+dockergit@fida.biz" &&\
-                git config --global user.name "0xFF"
+                git config --global user.name "0xff"
 
 CMD             ["/bin/sh"]

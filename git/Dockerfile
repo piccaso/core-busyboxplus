@@ -1,4 +1,4 @@
-FROM            scratch
+FROM            0xff/null
 ADD             rootfs.tar /
 
 # Setup and source bashrc for tab-complete, shell coloring
